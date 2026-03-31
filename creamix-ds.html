@@ -10,8 +10,8 @@
  <link rel="icon" sizes="192x192" href="logo.png">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Poppins:wght@700;800;900&amp;display=swap" rel="stylesheet">
-  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
-  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
  </head>
  <body>
 <div class="page-wrapper">
@@ -75,59 +75,109 @@
      </div>
     </div>
    </section><!-- Services Section -->
-   <section id="servicios" class="section">
-    <div class="section-header">
-     <div class="section-badge">
-      Servicios
-     </div>
-     <h2 class="section-title">Soluciones digitales completas</h2>
-     <p class="section-subtitle">Todo lo que necesitas para establecer una presencia digital profesional y efectiva</p>
+  <section id="servicios" class="relative w-full py-24 px-6 overflow-hidden" style="background: #0f172a;">
+  
+  <!-- Background -->
+  <div class="glow-orb" style="width:500px;height:500px;background:#1f2937;top:-150px;left:-150px;"></div>
+  <div class="glow-orb" style="width:350px;height:350px;background:#111827;bottom:-100px;right:-80px;"></div>
+
+  <div class="max-w-6xl mx-auto relative z-10">
+
+    <!-- Header -->
+    <div class="text-center mb-20">
+      <div class="inline-block badge-glow rounded-full px-6 py-2.5 mb-8 fade-up">
+        <span class="text-xs font-semibold uppercase tracking-wide" style="color:#94a3b8;">
+          Servicios
+        </span>
+      </div>
+
+      <h2 class="text-5xl md:text-6xl lg:text-7xl font-800 mb-6 fade-up fade-up-d1" style="color:#f8fafc;">
+        Soluciones digitales completas
+      </h2>
+
+      <p class="text-lg md:text-xl max-w-3xl mx-auto fade-up fade-up-d2" style="color:#cbd5e1;">
+        Todo lo que necesitas para establecer una presencia digital profesional y efectiva
+      </p>
     </div>
-    <div class="services-grid">
-     <div class="service-card">
-      <div class="service-icon">
-       💻
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div class="service-card-modern anim-d1">
+        <div class="service-icon-container">
+          <div class="service-icon-box">
+            <i data-lucide="monitor"></i>
+          </div>
+        </div>
+        <div class="service-content-modern">
+          <h3>Desarrollo Web</h3>
+          <p>Sitios web personalizados, modernos y funcionales construidos con las últimas tecnologías del mercado</p>
+        </div>
       </div>
-      <h3>Desarrollo Web</h3>
-      <p>Sitios web personalizados, modernos y funcionales construidos con las últimas tecnologías del mercado</p>
-     </div>
-     <div class="service-card">
-      <div class="service-icon">
-       🎨
+
+      <div class="service-card-modern anim-d2">
+        <div class="service-icon-container">
+          <div class="service-icon-box">
+            <i data-lucide="palette"></i>
+          </div>
+        </div>
+        <div class="service-content-modern">
+          <h3>Diseño UI/UX</h3>
+          <p>Interfaces intuitivas y atractivas que ofrecen experiencias memorables a tus usuarios</p>
+        </div>
       </div>
-      <h3>Diseño UI/UX</h3>
-      <p>Interfaces intuitivas y atractivas que ofrecen experiencias memorables a tus usuarios</p>
-     </div>
-     <div class="service-card">
-      <div class="service-icon">
-       📄
+
+      <div class="service-card-modern anim-d3">
+        <div class="service-icon-container">
+          <div class="service-icon-box">
+            <i data-lucide="rocket"></i>
+          </div>
+        </div>
+        <div class="service-content-modern">
+          <h3>Landing Pages</h3>
+          <p>Páginas de aterrizaje optimizadas para maximizar conversiones y captar clientes potenciales</p>
+        </div>
       </div>
-      <h3>Landing Pages</h3>
-      <p>Páginas de aterrizaje optimizadas para maximizar conversiones y captar clientes potenciales</p>
-     </div>
-     <div class="service-card">
-      <div class="service-icon">
-       🛍️
+
+      <div class="service-card-modern anim-d4">
+        <div class="service-icon-container">
+          <div class="service-icon-box">
+            <i data-lucide="shopping-bag"></i>
+          </div>
+        </div>
+        <div class="service-content-modern">
+          <h3>Tiendas Online</h3>
+          <p>E-commerce completos con sistemas de pago, inventario y gestión de pedidos integrados</p>
+        </div>
       </div>
-      <h3>Tiendas Online</h3>
-      <p>E-commerce completos con sistemas de pago, inventario y gestión de pedidos integrados</p>
-     </div>
-     <div class="service-card">
-      <div class="service-icon">
-       🎯
+
+      <div class="service-card-modern anim-d5">
+        <div class="service-icon-container">
+          <div class="service-icon-box">
+            <i data-lucide="target"></i>
+          </div>
+        </div>
+        <div class="service-content-modern">
+          <h3>Branding Digital</h3>
+          <p>Identidad de marca coherente y profesional que conecta con tu audiencia objetivo</p>
+        </div>
       </div>
-      <h3>Branding Digital</h3>
-      <p>Identidad de marca coherente y profesional que conecta con tu audiencia objetivo</p>
-     </div>
-     <div class="service-card">
-      <div class="service-icon">
-       🔧
+
+      <div class="service-card-modern anim-d6">
+        <div class="service-icon-container">
+          <div class="service-icon-box">
+            <i data-lucide="wrench"></i>
+          </div>
+        </div>
+        <div class="service-content-modern">
+          <h3>Mantenimiento</h3>
+          <p>Soporte continuo, actualizaciones y optimización para mantener tu sitio siempre activo</p>
+        </div>
       </div>
-      <h3>Mantenimiento</h3>
-      <p>Soporte continuo, actualizaciones y optimización para mantener tu sitio siempre activo</p>
-     </div>
+
     </div>
-   </section><!-- Process Section -->
+  </div>
+</section>
    <section id="proceso" class="section" style="background: rgba(139, 92, 246, 0.02);">
     <div class="section-header">
      <div class="section-badge">
