@@ -1,538 +1,274 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CreaMix-ds | Agencia Digital Creativa</title>
-  <script src="/_sdk/data_sdk.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CreaMixds | Soluciones digitales</title>
+  <meta name="description" content="CreaMixds crea sitios web, automatizaciones y soluciones digitales modernas para potenciar tu negocio." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link rel="icon" sizes="192x192" href="logo.png">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Poppins:wght@700;800;900&amp;display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-<script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
- </head>
- <body>
-<div class="page-wrapper">
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-content">
-      <div class="logo">
-        <img src="logo.png" alt="logo de la pagina">
-      </div>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-glow glow-1"></div>
+  <div class="background-glow glow-2"></div>
 
-      <ul class="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#portafolio">Portafolio</a></li>
-        <li><a href="#proceso">Proceso</a></li>
-      </ul>
-      <a href="#contacto" class="nav-cta">Contactar</a>
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <img src="assets/logo.png" alt="Logo CreaMixds" class="brand-logo" />
+        <span>CreaMixds</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Inicio</a>
+        <a href="#about">Nosotros</a>
+        <a href="#services">Servicios</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#process">Proceso</a>
+        <a href="#contact">Contacto</a>
+      </nav>
     </div>
-  </nav>
-  <!-- Hero Section -->
-  <section id="inicio" class="hero">
-    <div class="hero-content">
-      <h1>Diseño y desarrollo web para hacer crecer tu negocio</h1>
-      <p>Creamos sitios modernos, rápidos y optimizados para convertir visitas en clientes</p>
+  </header>
 
-      <div class="hero-buttons">
-        <a href="#portafolio" class="btn-secondary">Ver proyectos</a>
-      </div>
-    </div>
-  </section>
-</div>
-   <section class="benefits">
-    <div class="benefits-grid">
-     <div class="benefit-card">
-      <div class="benefit-icon">
-       🚀
-      </div>
-      <h3>Más clientes online</h3>
-      <p>Aumenta tus ventas con un sitio optimizado para conversión y resultados medibles</p>
-     </div>
-     <div class="benefit-card">
-      <div class="benefit-icon">
-       ✨
-      </div>
-      <h3>Imagen profesional</h3>
-      <p>Destaca de la competencia con un diseño único que refleja la esencia de tu marca</p>
-     </div>
-     <div class="benefit-card">
-      <div class="benefit-icon">
-       ⚡
-      </div>
-      <h3>Web rápida y optimizada</h3>
-      <p>Sitios de alto rendimiento que cargan en segundos y mejoran la experiencia del usuario</p>
-     </div>
-     <div class="benefit-card">
-      <div class="benefit-icon">
-       🤝
-      </div>
-      <h3>Soporte personalizado</h3>
-      <p>Te acompañamos en todo el proceso y más allá del lanzamiento de tu proyecto</p>
-     </div>
-    </div>
-   </section><!-- Services Section -->
-  <section id="servicios" class="relative w-full py-24 px-6 overflow-hidden" style="background: #0f172a;">
-  
-  <!-- Background -->
-  <div class="glow-orb" style="width:500px;height:500px;background:#1f2937;top:-150px;left:-150px;"></div>
-  <div class="glow-orb" style="width:350px;height:350px;background:#111827;bottom:-100px;right:-80px;"></div>
-
-  <div class="max-w-6xl mx-auto relative z-10">
-
-    <!-- Header -->
-    <div class="text-center mb-20">
-      <div class="inline-block badge-glow rounded-full px-6 py-2.5 mb-8 fade-up">
-        <span class="text-xs font-semibold uppercase tracking-wide" style="color:#94a3b8;">
-          Servicios
-        </span>
-      </div>
-
-      <h2 class="text-5xl md:text-6xl lg:text-7xl font-800 mb-6 fade-up fade-up-d1" style="color:#f8fafc;">
-        Soluciones digitales completas
-      </h2>
-
-      <p class="text-lg md:text-xl max-w-3xl mx-auto fade-up fade-up-d2" style="color:#cbd5e1;">
-        Todo lo que necesitas para establecer una presencia digital profesional y efectiva
-      </p>
-    </div>
-
-    <!-- Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <div class="service-card-modern anim-d1">
-        <div class="service-icon-container">
-          <div class="service-icon-box">
-            <i data-lucide="monitor"></i>
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">DISEÑO · DESARROLLO · CRECIMIENTO DIGITAL</span>
+          <h1>Impulsamos marcas con experiencias web que se ven <span>diferentes</span>.</h1>
+          <p>
+            En CreaMixds diseñamos páginas modernas, sistemas a medida y soluciones digitales
+            pensadas para atraer clientes, transmitir confianza y convertir visitas en resultados.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Quiero mi proyecto</a>
+            <a href="#projects" class="btn btn-secondary">Ver trabajos</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>+10</strong><span>ideas lanzadas</span></div>
+            <div><strong>100%</strong><span>adaptable</span></div>
+            <div><strong>24/7</strong><span>presencia digital</span></div>
           </div>
         </div>
-        <div class="service-content-modern">
-          <h3>Desarrollo Web</h3>
-          <p>Sitios web personalizados, modernos y funcionales construidos con las últimas tecnologías del mercado</p>
-        </div>
-      </div>
-
-      <div class="service-card-modern anim-d2">
-        <div class="service-icon-container">
-          <div class="service-icon-box">
-            <i data-lucide="palette"></i>
+        <div class="hero-card reveal delay-1">
+          <div class="glass-card floating-card">
+            <img src="assets/logo.png" alt="CreaMixds" class="hero-logo">
+            <div class="floating-badge">Branding + Web + Backend</div>
+            <div class="hero-card-grid">
+              <article>
+                <h3>Landing pages</h3>
+                <p>Diseños visuales, responsive y rápidos.</p>
+              </article>
+              <article>
+                <h3>Sistemas</h3>
+                <p>Backend, formularios y paneles de gestión.</p>
+              </article>
+              <article>
+                <h3>Automatización</h3>
+                <p>Procesos digitales que ahorran tiempo.</p>
+              </article>
+              <article>
+                <h3>Identidad</h3>
+                <p>Presencia sólida y coherente para tu marca.</p>
+              </article>
+            </div>
           </div>
         </div>
-        <div class="service-content-modern">
-          <h3>Diseño UI/UX</h3>
-          <p>Interfaces intuitivas y atractivas que ofrecen experiencias memorables a tus usuarios</p>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container split-section">
+        <div class="section-title reveal">
+          <span class="eyebrow">SOBRE NOSOTROS</span>
+          <h2>Diseño creativo con enfoque estratégico.</h2>
+        </div>
+        <div class="about-box reveal delay-1">
+          <p>
+            CreaMixds combina estética, funcionalidad y tecnología para construir sitios web y
+            plataformas digitales que representen tu negocio de forma profesional.
+          </p>
+          <p>
+            No se trata solo de “tener una página”, sino de contar con una herramienta que te ayude
+            a mostrar tus servicios, captar oportunidades y escalar tu presencia online.
+          </p>
         </div>
       </div>
+    </section>
 
-      <div class="service-card-modern anim-d3">
-        <div class="service-icon-container">
-          <div class="service-icon-box">
-            <i data-lucide="rocket"></i>
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-title center reveal">
+          <span class="eyebrow">SERVICIOS</span>
+          <h2>Todo lo necesario para construir una presencia digital sólida.</h2>
+        </div>
+        <div class="cards-grid services-grid">
+          <article class="service-card reveal">
+            <div class="icon">✦</div>
+            <h3>Diseño web</h3>
+            <p>Landing pages y sitios corporativos con diseño moderno, responsive y optimizado.</p>
+          </article>
+          <article class="service-card reveal delay-1">
+            <div class="icon">⚙</div>
+            <h3>Desarrollo backend</h3>
+            <p>Formularios, APIs, paneles de administración y funcionalidades a medida.</p>
+          </article>
+          <article class="service-card reveal delay-2">
+            <div class="icon">◉</div>
+            <h3>Branding digital</h3>
+            <p>Aplicación visual coherente para transmitir identidad, confianza y profesionalismo.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon">↗</div>
+            <h3>Optimización</h3>
+            <p>Mejora de rendimiento, experiencia de usuario y estructura para generar más impacto.</p>
+          </article>
+          <article class="service-card reveal delay-1">
+            <div class="icon">⌘</div>
+            <h3>Automatizaciones</h3>
+            <p>Integraciones y flujos que simplifican tareas repetitivas dentro de tu negocio.</p>
+          </article>
+          <article class="service-card reveal delay-2">
+            <div class="icon">◎</div>
+            <h3>Soporte continuo</h3>
+            <p>Actualizaciones, mejoras y acompañamiento para que tu web siga creciendo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-title center reveal">
+          <span class="eyebrow">PROYECTOS</span>
+          <h2>Ejemplos del tipo de soluciones que puede ofrecer CreaMixds.</h2>
+        </div>
+        <div class="cards-grid project-grid">
+          <article class="project-card reveal">
+            <span class="project-tag">Web corporativa</span>
+            <h3>Estudio profesional</h3>
+            <p>Sitio elegante para presentar servicios, equipo y contacto comercial.</p>
+          </article>
+          <article class="project-card reveal delay-1">
+            <span class="project-tag">Sistema interno</span>
+            <h3>Panel de gestión</h3>
+            <p>Administración de contenido, consultas y seguimiento desde un dashboard.</p>
+          </article>
+          <article class="project-card reveal delay-2">
+            <span class="project-tag">Marca personal</span>
+            <h3>Portfolio digital</h3>
+            <p>Diseño enfocado en impacto visual, credibilidad y captación de clientes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-title center reveal">
+          <span class="eyebrow">PROCESO</span>
+          <h2>Una metodología simple para pasar de idea a resultado.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span>01</span>
+            <div>
+              <h3>Descubrimiento</h3>
+              <p>Definimos objetivos, público, estilo visual y necesidades técnicas.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal delay-1">
+            <span>02</span>
+            <div>
+              <h3>Diseño y estructura</h3>
+              <p>Organizamos contenido, jerarquía visual y experiencia del usuario.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal delay-2">
+            <span>03</span>
+            <div>
+              <h3>Desarrollo</h3>
+              <p>Construimos el frontend y el backend necesario para que todo funcione.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span>04</span>
+            <div>
+              <h3>Lanzamiento</h3>
+              <p>Publicación, ajustes finales y acompañamiento posterior.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="eyebrow">CONTACTO</span>
+          <h2>Contame tu idea y la transformamos en una experiencia digital real.</h2>
+          <p>
+            Este formulario está conectado al backend del proyecto. Los mensajes quedan guardados
+            localmente para que puedas usar esta base como punto de partida.
+          </p>
+          <div class="contact-mini-card">
+            <strong>CreaMixds</strong>
+            <span>Desarrollo web · Diseño · Soluciones digitales</span>
           </div>
         </div>
-        <div class="service-content-modern">
-          <h3>Landing Pages</h3>
-          <p>Páginas de aterrizaje optimizadas para maximizar conversiones y captar clientes potenciales</p>
-        </div>
-      </div>
 
-      <div class="service-card-modern anim-d4">
-        <div class="service-icon-container">
-          <div class="service-icon-box">
-            <i data-lucide="shopping-bag"></i>
+        <form class="contact-form reveal delay-1" id="contactForm">
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tunombre@email.com" required>
+            </div>
           </div>
-        </div>
-        <div class="service-content-modern">
-          <h3>Tiendas Online</h3>
-          <p>E-commerce completos con sistemas de pago, inventario y gestión de pedidos integrados</p>
-        </div>
-      </div>
-
-      <div class="service-card-modern anim-d5">
-        <div class="service-icon-container">
-          <div class="service-icon-box">
-            <i data-lucide="target"></i>
+          <div class="field-row">
+            <div class="field">
+              <label for="company">Marca o negocio</label>
+              <input type="text" id="company" name="company" placeholder="Nombre de tu marca">
+            </div>
+            <div class="field">
+              <label for="service">Servicio</label>
+              <select id="service" name="service">
+                <option value="Diseño web">Diseño web</option>
+                <option value="Sitio corporativo">Sitio corporativo</option>
+                <option value="Backend / sistema">Backend / sistema</option>
+                <option value="Landing page">Landing page</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div class="service-content-modern">
-          <h3>Branding Digital</h3>
-          <p>Identidad de marca coherente y profesional que conecta con tu audiencia objetivo</p>
-        </div>
-      </div>
-
-      <div class="service-card-modern anim-d6">
-        <div class="service-icon-container">
-          <div class="service-icon-box">
-            <i data-lucide="wrench"></i>
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="6" placeholder="Contame qué te gustaría construir" required></textarea>
           </div>
-        </div>
-        <div class="service-content-modern">
-          <h3>Mantenimiento</h3>
-          <p>Soporte continuo, actualizaciones y optimización para mantener tu sitio siempre activo</p>
-        </div>
+          <button type="submit" class="btn btn-primary full-width">Enviar consulta</button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
       </div>
+    </section>
+  </main>
 
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong>CreaMixds</strong>
+        <p>Diseñando experiencias web que conectan marca, tecnología y resultados.</p>
+      </div>
+      <a href="#home" class="back-top">Volver arriba ↑</a>
     </div>
-  </div>
-</section>
-   <section id="proceso" class="section" style="background: rgba(139, 92, 246, 0.02);">
-    <div class="section-header">
-     <div class="section-badge">
-      Proceso
-     </div>
-     <h2 class="section-title">Cómo trabajamos</h2>
-     <p class="section-subtitle">Un proceso claro y efectivo que garantiza resultados excepcionales</p>
-    </div>
-    <div class="process-steps">
-     <div class="process-step">
-      <div class="step-number">
-       1
-      </div>
-      <h3>Análisis del proyecto</h3>
-      <p>Conocemos tus objetivos, público y necesidades para crear la estrategia perfecta</p>
-     </div>
-     <div class="process-step">
-      <div class="step-number">
-       2
-      </div>
-      <h3>Diseño y prototipo</h3>
-      <p>Creamos wireframes y diseños visuales para que apruebes antes de desarrollar</p>
-     </div>
-     <div class="process-step">
-      <div class="step-number">
-       3
-      </div>
-      <h3>Desarrollo</h3>
-      <p>Construimos tu sitio con código limpio, optimizado y siguiendo mejores prácticas</p>
-     </div>
-     <div class="process-step">
-      <div class="step-number">
-       4
-      </div>
-      <h3>Lanzamiento y soporte</h3>
-      <p>Publicamos tu proyecto y te acompañamos con soporte continuo y capacitación</p>
-     </div>
-    </div>
-   </section><!-- Portfolio Section -->
-   <section id="portafolio" class="section">
-    <div class="section-header">
-     <div class="section-badge">
-      Portafolio
-     </div>
-     <h2 class="section-title">Proyectos destacados</h2>
-     <p class="section-subtitle">Algunos de nuestros trabajos más recientes que transformaron negocios</p>
-    </div>
-    <div class="portfolio-grid">
-     <div class="portfolio-card">
-      <div class="portfolio-image">
-       👩‍🎨
-      </div>
-      <div class="portfolio-content"><span class="portfolio-tag">Portafolio</span>
-       <h3>Alexandra Torres</h3>
-       <p>Portafolio profesional y elegante para fotógrafa con galería de trabajos, sección de servicios y formulario de contacto integrado</p><a href="https://creamix-ds.github.io/proyectos/portafolioalexandratorres.html" target="_blank" rel="noopener noreferrer" class="portfolio-link">Ver proyecto →</a>
-      </div>
-     </div>
-     <div class="portfolio-card">
-      <div class="portfolio-image">
-       💻
-      </div>
-      <div class="portfolio-content"><span class="portfolio-tag">E-commerce</span>
-       <h3>TechStore Pro</h3>
-       <p>E-commerce corporativo de tecnología con catálogo de productos, carrito de compras, filtros avanzados y diseño profesional optimizado</p><a href="https://creamix-ds.github.io/proyectos/TechStorePro-E-commerceCorporativo.html" target="_blank" rel="noopener noreferrer" class="portfolio-link">Ver proyecto →</a>
-      </div>
-     </div>
-     <div class="portfolio-card">
-      <div class="portfolio-image">
-       🍕
-      </div>
-      <div class="portfolio-content"><span class="portfolio-tag">Sitio Web</span>
-       <h3>Pizzería Artesanal</h3>
-       <p>Sitio web para pizzería con menú interactivo, sistema de pedidos online y diseño visual atractivo que aumentó las ventas digitales</p><a href="https://creamix-ds.github.io/proyectos/pizerria.html" target="_blank" rel="noopener noreferrer" class="portfolio-link">Ver proyecto →</a>
-      </div>
-     </div>
-     <div class="portfolio-card">
-      <div class="portfolio-image">
-       📱
-      </div>
-      <div class="portfolio-content"><span class="portfolio-tag">Landing Page</span>
-       <h3>Digital Marketing Pro</h3>
-       <p>Landing page de alta conversión con formularios inteligentes, diseño moderno y optimización para captación de leads</p><a href="https://creamix-ds.github.io/proyectos/DigitalMarketingPro.html " class="portfolio-link">Ver proyecto →</a>
-      </div>
-     </div>
-     <div class="portfolio-card">
-      <div class="portfolio-image">
-       💼
-      </div>
-      <div class="portfolio-content"><span class="portfolio-tag">Sitio Web</span>
-       <h3>Empresa Corporativa</h3>
-       <p>Sitio web profesional para empresa con presentación de servicios, equipo de trabajo y formulario de contacto integrado</p><a href="https://creamix-ds.github.io/proyectos/corporativa.html" class="portfolio-link">Ver proyecto →</a>
-      </div>
-     </div>
-     <div class="portfolio-card">
-      <div class="portfolio-image">
-       🏋️
-      </div>
-      <div class="portfolio-content"><span class="portfolio-tag">Sitio Web</span>
-       <h3>Fitness Zone</h3>
-       <p>Portal web con sistema de reservas de clases, membresías online y blog de contenido fitness</p><a href="https://creamix-ds.github.io/proyectos/fitness-zone.html" class="portfolio-link">Ver proyecto →</a>
-      </div>
-     </div>
-    </div>
-   </section><!-- Testimonials Section -->
-   <section class="section" style="background: rgba(249, 115, 22, 0.02);">
-    <div class="section-header">
-     <div class="section-badge">
-      Testimonios
-     </div>
-     <h2 class="section-title">Lo que dicen nuestros clientes</h2>
-     <p class="section-subtitle">Historias de éxito que nos motivan a seguir mejorando</p>
-    </div>
-    <div class="testimonials-grid">
-     <div class="testimonial-card">
-      <div class="quote-icon">
-       "
-      </div>
-      <p class="testimonial-text">El equipo de CreaMix-ds transformó completamente nuestra presencia online. En 3 meses triplicamos nuestras ventas digitales. Profesionales y comprometidos al 100%.</p>
-      <div class="testimonial-author">
-       <div class="author-avatar">
-        👨
-       </div>
-       <div class="author-info">
-        <h4>Carlos Mendoza</h4>
-        <p>CEO, Tech Solutions</p>
-       </div>
-      </div>
-     </div>
-     <div class="testimonial-card">
-      <div class="quote-icon">
-       "
-      </div>
-      <p class="testimonial-text">Increíble experiencia trabajando con ellos. Entendieron perfecto lo que necesitábamos y entregaron más de lo esperado. El sitio es hermoso y funcional.</p>
-      <div class="testimonial-author">
-       <div class="author-avatar">
-        👩
-       </div>
-       <div class="author-info">
-        <h4>María González</h4>
-        <p>Fundadora, Moda Urbana</p>
-       </div>
-      </div>
-     </div>
-     <div class="testimonial-card">
-      <div class="quote-icon">
-       "
-      </div>
-      <p class="testimonial-text">La mejor inversión que hicimos para nuestro negocio. No solo crearon un sitio espectacular, sino que nos enseñaron a aprovecharlo al máximo. Muy recomendados.</p>
-      <div class="testimonial-author">
-       <div class="author-avatar">
-        👨
-       </div>
-       <div class="author-info">
-        <h4>Roberto Silva</h4>
-        <p>Dueño, Sabores Express</p>
-       </div>
-      </div>
-     </div>
-    </div><!-- Trust Stats -->
-    <div class="trust-stats">
-     <div class="trust-stat">
-      <div class="trust-icon">
-       🎯
-      </div>
-      <div class="trust-number">
-       +10
-      </div>
-      <div class="trust-label">
-       Proyectos Exitosos
-      </div>
-     </div>
-     <div class="trust-stat">
-      <div class="trust-icon">
-       😊
-      </div>
-      <div class="trust-number">
-       100%
-      </div>
-      <div class="trust-label">
-       Clientes Satisfechos
-      </div>
-     </div>
-     <div class="trust-stat">
-      <div class="trust-icon">
-       ⚡
-      </div>
-      <div class="trust-number">
-       24/7
-      </div>
-      <div class="trust-label">
-       Soporte Continuo
-      </div>
-     </div>
-     <div class="trust-stat">
-      <div class="trust-icon">
-       🏆
-      </div>
-      <div class="trust-number">
-       2+
-      </div>
-      <div class="trust-label">
-       Años de Experiencia
-      </div>
-     </div>
-    </div>
-   </section><!-- CTA Section -->
-   <section class="cta-section">
-    <div class="cta-content">
-     <h2>¿Listo para llevar tu proyecto al siguiente nivel?</h2>
-     <p>Comienza hoy mismo a construir la presencia digital que tu negocio merece</p><a href="#contacto" class="btn-primary">Pedí tu presupuesto hoy</a>
-    </div>
-   </section><!-- Contact Section -->
-   <section id="contacto" class="section">
-    <div class="section-header">
-     <div class="section-badge">
-      Contacto
-     </div>
-     <h2 class="section-title">Hablemos de tu proyecto</h2>
-     <p class="section-subtitle">Contanos qué necesitas y te enviaremos una propuesta personalizada</p>
-    </div>
-    <div class="botones-contacto">
-  <a href="https://wa.me/5492494501665" class="btn-contacto">Contactar por whatsapp</a>
-  <a href="mailto:creamixds@gmail.com?subject=Consulta%20sobre%20mi%20proyecto" class="btn-contacto">Contactar por email</a>
-</div>
+  </footer>
 
-
-   <!--- <div class="contact-wrapper">
-     <div class="trust-message">
-      <p>⏰ Respondemos en menos de 24 horas</p>
-     </div>
-   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftmmfYDMCiCPCoI5YWSRNwq7yzcOpApOrxmzFgO8uOkv0icg/viewform?embedded=true" 
-    width="640" height="1149" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-    </div> -->
-   </section><!-- Footer -->
-   <footer>
-    <div class="footer-content">
-     <div class="footer-logo">
-      CreaMix-ds
-     </div>
-     <p class="footer-text">Agencia digital especializada en diseño y desarrollo web</p>
-          <p class="footer-text">Para mas informacion detallada escribinos a creamixds@gmail.com</p>
-     <div class="footer-links"><a href="#inicio">Inicio</a> <a href="#servicios">Servicios</a> <a href="#portafolio">Portafolio</a> <a href="#proceso">Proceso</a> <a href="#contacto">Contacto</a>
-     </div>
-     <div class="footer-bottom">
-      <p> 2025 CreaMix-ds - Argentina</p>
-     </div>
-    </div>
-   </footer>
-  </div>
-  <script>
-  lucide.createIcons();
-</script>
-  <script>
-    let currentRecordCount = 0;
-
-    // Data SDK Handler
-    const dataHandler = {
-      onDataChanged(data) {
-        currentRecordCount = data.length;
-      }
-    };
-
-    // Toast notification
-    function showToast(message, type = 'success') {
-      const toast = document.createElement('div');
-      toast.className = `toast ${type}`;
-      toast.textContent = message;
-      document.body.appendChild(toast);
-
-      setTimeout(() => {
-        toast.classList.add('slide-out');
-        setTimeout(() => toast.remove(), 300);
-      }, 3500);
-    }
-
-    // Initialize Data SDK
-    async function initDataSDK() {
-      if (window.dataSdk) {
-        const initResult = await window.dataSdk.init(dataHandler);
-        if (!initResult.isOk) {
-          console.error("Error inicializando Data SDK");
-        }
-      }
-    }
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-
-    // Form submission with Data SDK
-    document.getElementById('contactForm').addEventListener('submit', async function(e) {
-      e.preventDefault();
-
-      if (!window.dataSdk) {
-        showToast('Error: Sistema de guardado no disponible', 'error');
-        return;
-      }
-
-      if (currentRecordCount >= 999) {
-        showToast('Límite de mensajes alcanzado. Contacta al administrador.', 'error');
-        return;
-      }
-
-      const submitBtn = document.getElementById('submitButton');
-      const originalText = submitBtn.textContent;
-      
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Enviando...';
-
-      const formData = {
-        name: document.getElementById('name').value,
-       company: document.getElementById('company').value,
-        email: document.getElementById('email').value,
-        message: document.getElementById('message').value,
-        date: new Date().toISOString()
-      };
-
-      const result = await window.dataSdk.create(formData);
-
-      submitBtn.disabled = false;
-      submitBtn.textContent = originalText;
-
-      if (result.isOk) {
-        showToast('¡Gracias! Tu mensaje ha sido recibido. Te contactaremos pronto.', 'success');
-        this.reset();
-      } else {
-        showToast('Error al enviar el mensaje. Por favor intenta de nuevo.', 'error');
-      }
-    });
-
-    // Initialize on load
-    initDataSDK();
-  </script>
- <script>
-  (function(){function c(){var b=a.contentDocument||a.contentWindow.document;
-         if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ba8208b944f6ccb',t:'MTc2NzgzNzg5Ny4wMDAwMDA='};
-          var a=document.createElement('script');a.nonce='';
-               a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';
-               document.getElementsByTagName('head')[0].appendChild(a);
-               ";b.getElementsByTagName('head')[0].appendChild(d)}}
-                if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';
-                   a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);
-                    if('loading'!==document.readyState)c();else 
-                      if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);
-                          else{var e=document.onreadystatechange||function(){};
-                             document.onreadystatechange=function(b){e(b);                                  
-       'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+  <script src="script.js"></script>
+</body>
 </html>
